@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- <script src="parcel.js"></script> -->
+<link rel="stylesheet" href="/static/css/parcel.css">
+<script src="/static/js/parcel.js"></script>
+</head>
+<body>
+    <div class="title">
+        {% include 'header.html' %}
+        {% include 'slideshow.html' %}
+        <div class="container">
+            <div class="row">
+                <div class="page-content col-lg-8 col-md-8 col-sm-12 col-xs-12"> 
+                    {% include 'property_main.html' %}
+                    {% include 'features.html' %}
+                    {% include 'more_features.html' %}
+                    {% include 'property-detail.html' %}                  
+                </div>
+            </div>
+            <div class="sidebar col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="map_div">
+                        <div id="map" style="width:100%;height:400px;"></div>
+                        <input type="hidden" id="langLat" lat={{ data.lbstream.parcelid.source[0].record.LATITUDE.value}} lang = {{ data.lbstream.parcelid.source[0].record.LONGITUDE.value}}>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEj2ZN1rClnACgJPwvZ-4EDRWF2CplERI
+    &callback=myMap"></script>
+</body>
+</html>

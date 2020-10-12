@@ -1,0 +1,38 @@
+<div class="fact_features">
+    <ul class="fact_features_list">
+        <li class="fact_features_list_items">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <span class="fact_features_label">Occupancy:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.occup.value}}</span>
+        </li>
+        
+        <li class="fact_features_list_items">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="fact_features_label">Style: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.style.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+            <span class="fact_features_label">Heating:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.heat.value}}</span>
+        </li>
+        
+        <li class="fact_features_list_items">
+            <i class="fa fa-building" aria-hidden="true"></i>
+            <span class="fact_features_label">Year built:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[0].record.yrbuilt.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="fact_features_label">Total living area:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.livatot.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="fact_features_label">Lot size (sq ft):</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[0].record.propsize.value}}</span>
+        </li>
+        
+    </ul>
+
+</div>

@@ -1,0 +1,71 @@
+<p class="display_more">Click For More Details</p>
+<div class="more_features" style="display: none;">
+    <ul>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Parcelid:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.id}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Type of attic:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.attic.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Lot shape (sq ft):</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[0].record.lotshape.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Living area on FF (sq ft):</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.liva1st.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Living area on SF (sq ft):</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.liva2nd.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Basement sq ft:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.basesqft.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Basement finished sq ft:</span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.bfinsqft.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Neighborhood: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[0].record.neighbor.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">NSP2 Area: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[0].record.nsp2.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Construction quality: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.cqual.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Exterior walls: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.rextwall.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Number of stories: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.rnumstor.value}}</span>
+        </li>
+        <li class="fact_features_list_items">
+            
+            <span class="fact_features_label">Roof material: </span>
+            <span class="fact_features_value">{{ data.lbstream.parcelid.source[1].record.roofmat.value}}</span>
+        </li>
+        
+    </ul>  
+</div>

@@ -1,0 +1,66 @@
+<div>
+    <div class="list-detail-options detail_flex">
+        <div class="title-area">
+            <div class="price-holder">
+                <span class="property-price">
+                    <span class="new-price text-color">$21,500
+                        <span class="prop-price-type">
+                            <span class="price-type">Guide Price</span>
+                        </span>
+                    </span>
+                </span>
+            </div>
+
+            <h2>House For Sale</h2>
+
+            <address>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i>{{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NUMBER.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NAME.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_SUFFIX.value}},{{ data.lbstream.parcelid.source[0].record.MAIL_CITY.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STATE.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_ZIPCODE.value}} </span>
+                <input type="hidden" id="address" address1 = "{{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NUMBER.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NAME.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_SUFFIX.value}}" address2="{{ data.lbstream.parcelid.source[0].record.MAIL_CITY.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STATE.value}}" owner = "{{ data.lbstream.parcelid.source[0].record.towner.value}}" zip = "{{ data.lbstream.parcelid.source[0].record.MAIL_ZIPCODE.value}}">
+                
+            </address>
+
+            <div class="property-data">
+                <ul>
+                    <li class="featured-property">
+                        <span class="bgcolor">Featured</span>
+                    </li>
+                    <li class="prop-type"><i class="fa fa-home" aria-hidden="true"></i><a href="#">{{ data.lbstream.parcelid.source[0].record.propstat.value}}</a> </li>
+                    <li class="prop-favourite">
+                        <div class="like-btn">
+                            <a href="#" class="favourite wp-rem-open-signin-tab">
+                                <i class="fa fa-heart" aria-hidden="true"></i>Favourite </a>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="button_id">
+            <a class="btn btn-success btn-labeled" href="" role="button">
+                <span class="btn-label"><i class="fa fa-info " aria-hidden="true"></i></span>Parcelid: {{ data.lbstream.parcelid.id}}</a>
+        </div>
+    </div>
+    <ul class="categories-holder">
+        <li>
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <span class="field-label">Bedrooms</span>: <span class="field-value">{{ data.lbstream.parcelid.source[1].record.bedrooms.value}}</span> </li>
+        <li>
+            <i class="fa fa-bath" aria-hidden="true"></i>
+            <span class="field-label">Bathrooms</span>: <span class="field-value">{{ data.lbstream.parcelid.source[1].record.baths.value}}</span> </li>
+        <li>
+            <i class="fa fa-bath" aria-hidden="true"></i>
+            <span class="field-label">Half Bath</span>: <span class="field-value">{{ data.lbstream.parcelid.source[1].record.halfbath.value}}</span> </li>
+        
+        <li>
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="field-label">Garage capacity</span>: <span class="field-value">{{ data.lbstream.parcelid.source[1].record.garcap.value}}</span> </li>
+        <li>
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="field-label">SqFt</span>: <span class="field-value">{{ data.lbstream.parcelid.source[1].record.livatot.value}}</span> </li>
+        
+    </ul>
+    <div class="image_div">
+        <img src="/static/images/{{ data.lbstream.parcelid.id}}_main_pic.JPG" >
+    </div>
+</div>
