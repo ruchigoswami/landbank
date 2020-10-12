@@ -1,1 +1,1 @@
-heroku ps:scale web=1
+sudo heroku ps:scale web=1
