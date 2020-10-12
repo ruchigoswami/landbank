@@ -1,1 +1,1 @@
-heroku ps:scale landbank=1
+heroku ps:scale web=1
