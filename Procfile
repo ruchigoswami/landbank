@@ -1,1 +1,2 @@
-heroku run python app.py
+web: python app.py
+heroku ps:scale worker=1
