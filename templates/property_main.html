@@ -14,8 +14,8 @@
             <h2>House For Sale</h2>
 
             <address>
-                <span><i class="fa fa-map-marker" aria-hidden="true"></i>{{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NUMBER.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NAME.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_SUFFIX.value}},{{ data.lbstream.parcelid.source[0].record.MAIL_CITY.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STATE.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_ZIPCODE.value}} </span>
-                <input type="hidden" id="address" address1 = "{{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NUMBER.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_NAME.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STREET_SUFFIX.value}}" address2="{{ data.lbstream.parcelid.source[0].record.MAIL_CITY.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STATE.value}}" owner = "{{ data.lbstream.parcelid.source[0].record.towner.value}}" zip = "{{ data.lbstream.parcelid.source[0].record.MAIL_ZIPCODE.value}}">
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i>{{ data.lbstream.parcelid.source[0].record.number.value}} {{ data.lbstream.parcelid.source[0].record.street.value}} , {{ data.lbstream.parcelid.source[0].record.MAIL_CITY.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STATE.value}} {{ data.lbstream.parcelid.source[0].record.zip.value}} </span>
+                <input type="hidden" id="address" address1 = "{{ data.lbstream.parcelid.source[0].record.number.value}} {{ data.lbstream.parcelid.source[0].record.street.value}} " address2="{{ data.lbstream.parcelid.source[0].record.MAIL_CITY.value}} {{ data.lbstream.parcelid.source[0].record.MAIL_STATE.value}}" owner = "{{ data.lbstream.parcelid.source[0].record.towner.value}}" zip = "{{ data.lbstream.parcelid.source[0].record.zip.value}}">
                 
             </address>
 

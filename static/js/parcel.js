@@ -173,8 +173,8 @@ $(document).ready(function(){
 
 
 	function myMap() {
-		var lat = parseInt($('#langLat').attr('lat'));
-		var lang = parseInt($('#langLat').attr('lang'));
+		var lat = parseFloat($('#langLat').attr('lat'));
+		var lang = parseFloat($('#langLat').attr('lang'));
 		var address1 = $('#address').attr('address1');
 		var address2 = $('#address').attr('address2');
 		var owner = $('#address').attr('owner');
