@@ -1,3 +1,2 @@
 xmltodict
-urllib
-json
+requests
