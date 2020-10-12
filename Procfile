@@ -1,1 +1,1 @@
-heroku run python manage.py
+heroku run python app.py
